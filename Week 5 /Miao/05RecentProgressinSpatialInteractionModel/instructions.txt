@@ -1,0 +1,14 @@
+Andrew Renninger
+For the tutorial this week, we are going to over the current leading edge of spatial interaction models. I will go over the Deep Gravity approach, which uses a neural network, and then an approach that is only about 2 weeks old and not yet published called Bayesian Machine Learning, which looks through a database of published closed-form equations (like the gravity-like equation that we have been using) and finds the one that best fits the data (and fits the free parameters). This is cool because it gives you a mathematical formula of the fit, that you can then interpret. These approaches are pretty involved so I am pointing them out in case you want to do something more advanced than what we have been doing for your dissertation; we will not run through the code for them, but do I have versions up-and-running for each of them that I can share.
+We will go through the code for another approach called AutoML, which combines models that you may have heard of—Random Forest, XGBoost, LightGBM, neural networks—to make a single set of predictions. This is called "stacking" models. The code for this is available here; it is best to just open it up in Google Colab if you have a Google account. If you want to do this locally, the files are also available on Moodle (or will be soon) and you will need to install automl , which means you need to activate your environment and then...
+
+pip install mljar-supervised
+
+(Way easier to do in Colab, though; the dependencies are a mess.)
+Let me know if you have any trouble, please. This practical will have a little bit more setup involved so I will try to help with any issues in this channel.
+
+Deep gravity model
+https://www.nature.com/articles/s41467-021-26752-4
+
+Bayesian model
+https://arxiv.org/abs/2312.11281
